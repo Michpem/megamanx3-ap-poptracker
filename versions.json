@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "package_version": "0.1.0",
+            "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v0.1.0/megamanx3-ap-poptracker.zip",
+            "sha256": "0",
+            "changelog": [
+                "Initial release"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "settings_popup": {
+        "type": "array",
+        "orientation": "vertical",
+        "background": "#000000",
+        "margin": "0,0",
+        "content": [
+            {
+                "name": "Settings",
+                "type": "itemgrid",
+                "item_margin": "5, 7",
+                "item_size": "200, 50",
+                "h_alignment": "left",
+                "rows": [
+                        ["pickupsanity", "doppler_medal_count", "vile_medal_count"],
+                        ["jammed_buster", "doppler_weapon_count", "vile_weapon_count"],
+                        ["logic_boss_unshuffled_weakness", "doppler_upgrade_count", "vile_upgrade_count"],
+                        ["doppler_all_labs", "doppler_heart_tank_count", "vile_heart_tank_count"],
+                        ["logic_vile_required", "doppler_sub_tank_count", "vile_sub_tank_count"],
+                        ["doppler_lab_3_boss_rematch_count", "bit_medal_count", "byte_medal_count"]
+                    ]
+            }
+        ]
+    }
+}
