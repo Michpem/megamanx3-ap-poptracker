@@ -37,7 +37,11 @@ function get_upgrades_count()
     upgrades = upgrades + Tracker:FindObjectForCode("third_armor_body").CurrentStage
     upgrades = upgrades + Tracker:FindObjectForCode("third_armor_legs").CurrentStage
     local arms = Tracker:FindObjectForCode("third_armor_arms").CurrentStage
-    if arms > 1 then upgrades = upgrades + arms - 1 end
+    if Tracker:FindObjectForCode('jammed_buster').CurrentStage == 0 then
+        if arms > 1 then upgrades = upgrades + arms - 1 end
+    else
+        upgrades = upgrades + arms
+    end
     return upgrades
 end
 
