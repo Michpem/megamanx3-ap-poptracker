@@ -3,7 +3,7 @@
         {
             "package_version": "0.1.1",
             "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v0.1.1/megamanx3-ap-poptracker.zip",
-            "sha256": "a2edfd75463391f23eb6214d9e9616e9470236f7b2b272d48a9dc327c1944b7c",
+            "sha256": "7d1e9b3fc34327191a49c73198328dc4158cca24a16a4521327819a7373636a1",
             "changelog": [
                 "Fixed bug in armor upgrade count logic"
             ]
