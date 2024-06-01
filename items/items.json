@@ -842,7 +842,7 @@
         "name": "Dr. Doppler Upgrade Count",
         "type": "consumable",
         "initial_quantity": 0,
-        "max_quantity": 4,
+        "max_quantity": 9,
         "overlay_font_size": 26,
         "img": "images/settings/doppler_upgrades_count.png",
         "codes": "doppler_upgrade_count"
@@ -1052,7 +1052,7 @@
       "name": "Vile Upgrade Count",
       "type": "consumable",
       "initial_quantity": 0,
-      "max_quantity": 4,
+      "max_quantity": 9,
       "overlay_font_size": 26,
       "img": "images/settings/vile_upgrades_count.png",
       "codes": "vile_upgrade_count"
