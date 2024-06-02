@@ -567,7 +567,7 @@
             },
             {
                 "name": "Dr. Doppler's Lab 2",
-                "access_rules": ["$are_doppler_two_and_three_open", "$doppler_1_cleared", "@Stages/Dr. Doppler's Lab 1/Dr. Doppler's Lab 1 Boss"],
+                "access_rules": ["$are_doppler_two_and_three_open", "$doppler_1_cleared"],
                 "sections": [
                     {
                         "name": "Dr. Doppler's Lab 2 Boss",
