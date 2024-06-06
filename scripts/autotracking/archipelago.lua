@@ -217,18 +217,16 @@ function onClear(slot_data)
     set_ap_vile_access(slot_data)
 
     enable_progressive_if_exists(slot_data, 'doppler_all_labs')
+    Tracker:FindObjectForCode('boss_weakness_strictness').CurrentStage = slot_data['boss_weakness_strictness']
     enable_if_exists(slot_data, 'logic_boss_weakness')
-    set_if_exists(slot_data, 'boss_weakness_rando')
+
+    if Tracker:FindObjectForCode('logic_boss_weakness').Active then
+        Tracker:FindObjectForCode('setting_weakness').CurrentStage = 1
+    end
     enable_progressive_if_exists(slot_data, 'logic_vile_required')
     set_if_exists(slot_data, 'bit_medal_count')
     set_if_exists(slot_data, 'byte_medal_count')
     set_if_exists(slot_data, 'doppler_lab_3_boss_rematch_count')
-
-    if Tracker:FindObjectForCode('logic_boss_weakness').Active then
-        if Tracker:FindObjectForCode('boss_weakness_rando').AcquiredCount == 0 then
-            Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').CurrentStage = 1
-        end
-    end
 
     if slot_data['bit_medal_count'] and slot_data['byte_medal_count'] then
         if slot_data['bit_medal_count'] == 0 and slot_data['byte_medal_count'] == 0 then
@@ -261,6 +259,7 @@ function onClear(slot_data)
 		Archipelago:Get({TAB_SWITCH_KEY})
 	end
 
+    BOSS_WEAKNESSES = slot_data['boss_weaknesses']
 end
 
 
@@ -371,6 +370,9 @@ function onItem(index, item_id, item_name, player_number)
     end
     update_vile_state()
     update_doppler_state()
+
+    print(string.format("boss_other_damage_possible: %s",boss_other_damage_possible()))
+    print(string.format("boss_weaknesses_not_required: %s",boss_weaknesses_not_required()))
 end
 
 -- called when a location gets cleared

@@ -8,6 +8,9 @@ function has(item, amount)
         return count >= amount
     end
 end
+function is_active(item)
+    return Tracker:FindObjectForCode(item).Active
+end
 
 function can_charge()
     local arms = Tracker:FindObjectForCode("arms").CurrentStage
@@ -15,8 +18,18 @@ function can_charge()
 end
 
 function boss_weaknesses_not_required()
-    local logic_boss_unshuffled_weakness = Tracker:FindObjectForCode('logic_boss_unshuffled_weakness').CurrentStage == 1
-    return not logic_boss_unshuffled_weakness
+    local setting_weakness = Tracker:FindObjectForCode('setting_weakness').CurrentStage == 1
+    return not setting_weakness
+end
+
+function boss_other_damage_possible()
+    if Tracker:FindObjectForCode("z_saber").Active then return true end
+    local strictness = Tracker:FindObjectForCode("boss_weakness_strictness").CurrentStage
+    if strictness == 3 then return false end
+    if strictness == 2 then
+        return can_charge()
+    end
+    return true
 end
 
 function get_weapons_count()
@@ -248,4 +261,73 @@ function print_debug_vile()
     print("vile_all_req_met(): ", vile_all_req_met())
     print("is_vile_open(): ", is_vile_open())
     print("vile_open object: ", Tracker:ProviderCountForCode("vile_open"))
+end
+
+WEAPON_CHECKS = {
+    [0x00] = function() return true end, --Lemon
+    [0x01] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 1 end, --Charged Shot (Level 1)
+    [0x02] = function() return is_active("z_saber") end, --Z-Saber (Slash)
+    [0x03] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 1 end, --Charged Shot (Level 2)
+    [0x04] = function() return is_active("z_saber") end, --Z-Saber (Beam)
+    [0x05] = function() return is_active("z_saber") end, --Z-Saber (Beam slashes)
+    [0x06] = function() return Tracker:FindObjectForCode("legs").CurrentStage >= 1 end, --Lemon (Dash)
+    [0x07] = function() return is_active("acid_burst") end, --Uncharged Acid Burst
+    [0x08] = function() return is_active("parasitic_bomb") end, --Uncharged Parasitic Bomb
+    [0x09] = function() return is_active("triad_thunder") end, --Uncharged Triad Thunder (Contact)
+    [0x0A] = function() return is_active("spinning_blade") end, --Uncharged Spinning Blade
+    [0x0C] = function() return is_active("gravity_well") end, --Gravity Well
+    [0x0D] = function() return is_active("frost_shield") end, --Uncharged Frost Shield
+    [0x0E] = function() return is_active("tornado_fang") end, --Uncharged Tornado Fang
+    [0x10] = function() return can_charge() and is_active("acid_burst") end, --Charged Acid Burst
+    [0x11] = function() return can_charge() and is_active("parasitic_bomb") end, --Charged Parasitic Bomb
+    [0x12] = function() return can_charge() and is_active("triad_thunder") end, --Charged Triad Thunder
+    [0x13] = function() return can_charge() and is_active("spinning_blade") end, --Charged Spinning Blade
+    [0x15] = function() return can_charge() and is_active("gravity_well") end, --Charged (?) Gravity Well
+    [0x16] = function() return can_charge() and is_active("frost_shield") end, --Charged Frost Shield (On hand)
+    [0x17] = function() return can_charge() and is_active("tornado_fang") end, --Charged Tornado Fang
+    [0x18] = function() return is_active("acid_burst") end, --Acid Burst (Small uncharged bubbles)
+    [0x1B] = function() return is_active("triad_thunder") end, --Uncharged Triad Thunder (Thunder)
+    [0x1C] = function() return is_active("ray_splasher") end, --Ray Splasher
+    [0x1D] = function() return can_charge() end, --Charged Shot (Level 3)
+    [0x1F] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 3 end, --Charged Shot (Level 4, Main projectile)
+    [0x20] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 3 end, --Charged Shot (Level 4, Secondary projectile)
+    [0x21] = function() return can_charge() and is_active("frost_shield") end, --Charged Frost Shield (Lotus)
+}
+
+--vanilla weaknesses
+BOSS_WEAKNESSES  = {
+    ["Blizzard Buffalo"] = {[1] = 8,[2] = 17,},
+    ["Sigma"] = {[1] = 13,[2] = 22,[3] = 33,[4] = 10,[5] = 18,},
+    ["Bit"] = {[1] = 9,[2] = 18,[3] = 27,[4] = 13,[5] = 22,[6] = 33,},
+    ["Vile"] = {[1] = 28,[2] = 10,[3] = 18,},
+    ["Shurikein"] = {[1] = 0,[2] = 1,[3] = 3,[4] = 6,[5] = 29,[6] = 31,[7] = 32,},
+    ["Worm Seeker-R"] = {[1] = 0,[2] = 1,[3] = 3,[4] = 6,[5] = 29,[6] = 31,[7] = 32,},
+    ["Volt Kurageil"] = {[1] = 9,[2] = 18,[3] = 27,[4] = 13,[5] = 22,[6] = 33,},
+    ["Hell Crusher"] = {[1] = 0,[2] = 1,[3] = 3,[4] = 6,[5] = 29,[6] = 31,[7] = 32,},
+    ["Volt Catfish"] = {[1] = 14,[2] = 23,},
+    ["Dr. Doppler's Lab 2 Boss"] = {[1] = 9,[2] = 18,[3] = 27,[4] = 13,[5] = 22,[6] = 33,},
+    ["Tunnel Rhino"] = {[1] = 7,[2] = 16,[3] = 24,},
+    ["Crush Crawfish"] = {[1] = 9,[2] = 18,[3] = 27,},
+    ["Toxic Seahorse"] = {[1] = 13,[2] = 22,[3] = 33,},
+    ["Vile Goliath"] = {[1] = 8,[2] = 17,[3] = 14,[4] = 23,},
+    ["Gravity Beetle"] = {[1] = 28,},
+    ["Godkarmachine"] = {[1] = 28,},
+    ["Neon Tiger"] = {[1] = 10,[2] = 18,},
+    ["Kaiser Sigma"] = {[1] = 0,[2] = 1,[3] = 3,[4] = 6,[5] = 29,[6] = 31,[7] = 32,},
+    ["Hotareeca"] = {[1] = 0,[2] = 1,[3] = 3,[4] = 6,[5] = 29,[6] = 31,[7] = 32,},
+    ["Doppler"] = {[1] = 7,[2] = 16,[3] = 24,},
+    ["Byte"] = {[1] = 14,[2] = 23,[3] = 28,},
+    ["Blast Hornet"] = {[1] = 12,[2] = 12,[3] = 21,},
+    ["Press Disposer"] = {[1] = 14,[2] = 23,[3] = 28,},
+}
+
+function has_weakness_for(bossname)
+    --print(string.format("Checking weaknesses for %s", bossname))
+    for _,weapon in ipairs(BOSS_WEAKNESSES[bossname]) do
+        local fn = WEAPON_CHECKS[weapon]
+        --print(string.format("has weakness for weapon 0x%x: %s", weapon, fn()))
+        if fn() then return true end
+    end
+    --print("Player does not have weakness")
+    return false
 end

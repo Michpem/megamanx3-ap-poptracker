@@ -81,11 +81,17 @@
                     },
                     {
                         "name": "Blizzard Buffalo",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[parasitic_bomb]"]
+                       "access_rules": [
+                            "$has_weakness_for|Blizzard Buffalo",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[parasitic_bomb]"]
+                        "access_rules": [
+                            "$has_weakness_for|Blizzard Buffalo",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -124,7 +130,10 @@
                     },
                     {
                         "name": "Hotareeca",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[triad_thunder]", "[frost_shield]"]
+                        "access_rules": [
+                            "$has_weakness_for|Hotareeca",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "HP Pickup 3 (After Hotareeca room)",
@@ -133,11 +142,17 @@
                     },
                     {
                         "name": "Toxic Seahorse",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[frost_shield]"]
+                        "access_rules": [
+                            "$has_weakness_for|Toxic Seahorse",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[frost_shield]"]
+                        "access_rules": [
+                            "$has_weakness_for|Toxic Seahorse",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -176,15 +191,24 @@
                     },
                     {
                         "name": "Hell Crusher",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[$can_charge],[tornado_fang]", "[ray_splasher]"]
+                        "access_rules": [
+                            "$has_weakness_for|Hell Crusher",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Tunnel Rhino",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[acid_burst]"]
+                        "access_rules": [
+                            "$has_weakness_for|Tunnel Rhino",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[acid_burst]"]
+                        "access_rules": [
+                            "$has_weakness_for|Tunnel Rhino",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -253,11 +277,17 @@
                     },
                     {
                         "name": "Volt Catfish",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[tornado_fang]"]
+                        "access_rules": [
+                            "$has_weakness_for|Volt Catfish",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[tornado_fang]"]
+                        "access_rules": [
+                            "$has_weakness_for|Volt Catfish",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -333,11 +363,17 @@
 
                     {
                         "name": "Crush Crawfish",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[triad_thunder]"]
+                        "access_rules": [
+                            "$has_weakness_for|Crush Crawfish",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[triad_thunder]"]
+                        "access_rules": [
+                            "$has_weakness_for|Crush Crawfish",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -377,7 +413,10 @@
                     },
                     {
                         "name": "Worm Seeker-R",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[triad_thunder]", "[acid_burst]"]
+                        "access_rules": [
+                            "$has_weakness_for|Worm Seeker-R",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Heart Tank",
@@ -385,11 +424,17 @@
                     },
                     {
                         "name": "Neon Tiger",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[spinning_blade]"]
+                        "access_rules": [
+                            "$has_weakness_for|Neon Tiger",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[spinning_blade]"]
+                        "access_rules": [
+                            "$has_weakness_for|Neon Tiger",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -458,20 +503,23 @@
                         "visibility_rules": [ "pickupsanity_on" ],
                         "access_rules": []
                     },
-
                     {
                         "name": "Arms Chip Capsule",
                         "access_rules": ["ride_chimera", "ride_kangaroo", "ride_hawk"]
                     },
-
-                    
                     {
                         "name": "Gravity Beetle",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[ray_splasher]"]
+                        "access_rules": [
+                            "$has_weakness_for|Gravity Beetle",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[ray_splasher]"]
+                        "access_rules": [
+                            "$has_weakness_for|Gravity Beetle",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -497,7 +545,10 @@
                     },
                     {
                         "name": "Shurikein",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[acid_burst]"]
+                        "access_rules": [
+                            "$has_weakness_for|Shurikein",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Chimera Ride Armor",
@@ -514,11 +565,17 @@
                     },
                     {
                         "name": "Blast Hornet",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[acid_burst],[gravity_well]"]
+                        "access_rules": [
+                            "$has_weakness_for|Blast Hornet",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Stage Clear",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[acid_burst],[gravity_well]"]
+                        "access_rules": [
+                            "$has_weakness_for|Blast Hornet",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -554,7 +611,11 @@
                     },
                     {
                         "name": "Dr. Doppler's Lab 1 Boss",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[$can_charge],[tornado_fang]", "[ray_splasher]"]
+                        "access_rules": [
+                            "$has_weakness_for|Press Disposer",
+                            "$has_weakness_for|Godkarmachine",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -571,7 +632,10 @@
                 "sections": [
                     {
                         "name": "Dr. Doppler's Lab 2 Boss",
-                        "access_rules": []
+                        "access_rules": [
+                            "$has_weakness_for|Dr. Doppler's Lab 2 Boss",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -588,35 +652,59 @@
                 "sections": [
                     {
                         "name": "Blizzard Buffalo (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[parasitic_bomb]"]
+                        "access_rules": [
+                            "$has_weakness_for|Blizzard Buffalo",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Toxic Seahorse (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[frost_shield]"]
+                        "access_rules": [
+                            "$has_weakness_for|Toxic Seahorse",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Tunnel Rhino (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[acid_burst]"]
+                        "access_rules": [
+                            "$has_weakness_for|Tunnel Rhino",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Volt Catfish (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[tornado_fang]"]
+                        "access_rules": [
+                            "$has_weakness_for|Volt Catfish",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Crush Crawfish (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[triad_thunder]"]
+                        "access_rules": [
+                            "$has_weakness_for|Crush Crawfish",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Neon Tiger (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[spinning_blade]"]
+                        "access_rules": [
+                            "$has_weakness_for|Neon Tiger",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Gravity Beetle (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[ray_splasher]"]
+                        "access_rules": [
+                            "$has_weakness_for|Gravity Beetle",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "Blast Hornet (Rematch)",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[gravity_well]"]
+                        "access_rules": [
+                            "$has_weakness_for|Blast Hornet",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "HP Pickup (Before Dr. Doppler room)",
@@ -625,7 +713,7 @@
                     },
                     {
                         "name": "Dr. Doppler",
-                        "access_rules": ["$rematch_quota_met,[$boss_weaknesses_not_required]", "$rematch_quota_met,[acid_burst]"]
+                        "access_rules": ["$rematch_quota_met,$boss_other_damage_possible,[$boss_weaknesses_not_required]", "$rematch_quota_met,$has_weakness_for|Doppler"]
                         
                     }
                 ],
@@ -643,7 +731,10 @@
                 "sections": [
                     {
                         "name": "Sigma",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[frost_shield]", "[spinning_blade]"]
+                        "access_rules": [
+                            "$has_weakness_for|Kaiser Sigma",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -687,7 +778,10 @@
                     {
                         "name": "Vile",
                         "hosted_item": "vile_cleared",
-                        "access_rules": ["[$boss_weaknesses_not_required]", "[ray_splasher]", "[spinning_blade]"]
+                        "access_rules": [
+                            "$has_weakness_for|Vile",
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                        ]
                     },
                     {
                         "name": "HP Pickup 5 (After boss room)",
@@ -752,7 +846,7 @@
                     {
                         "name": "Bit",
                         "hosted_item": "bit_state_2",
-                        "access_rules": ["bit_state_1,[$boss_weaknesses_not_required]", "bit_state_1,[triad_thunder]", "bit_state_1,[frost_shield]"]
+                        "access_rules": ["bit_state_1,$boss_other_damage_possible,[$boss_weaknesses_not_required]", "bit_state_1,$has_weakness_for|Bit"]
                     }
                 ],
                 "map_locations": [
@@ -770,7 +864,7 @@
                     {
                         "name": "Byte",
                         "hosted_item": "byte_state_2",
-                        "access_rules": ["byte_state_1,[$boss_weaknesses_not_required]", "byte_state_1,[$can_charge],[tornado_fang]", "byte_state_1,[ray_splasher]"]
+                        "access_rules": ["byte_state_1,$boss_other_damage_possible,[$boss_weaknesses_not_required]", "byte_state_1,$has_weakness_for|Byte"]
                     }
                 ],
                 "map_locations": [
