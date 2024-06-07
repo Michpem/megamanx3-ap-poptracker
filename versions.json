@@ -1,6 +1,20 @@
 {
     "versions": [
         {
+            "package_version": "1.0.0",
+            "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v1.0.0/megamanx3-ap-poptracker.zip",
+            "sha256": "0130ef07eff6c56decb0fb321c078a24dbcd0d0691b86bda955285410b57395e",
+            "changelog": [
+                "Version 1.0 because all game logic is now tracked and therefore should be feature complete for now.",
+                "Reworked boss weaknesses. Weaknesses are now detected and used for logic calculations, with vanilla weaknesses as a fallback if not autotracking",
+                "Bosses that can be reached and damaged but not required by logic are shown in yellow",
+                "Refights are now hidden if 0 are required",
+                "Added game-themed map icons to replace the default chest location marker",
+                "Replaced maverick medal icon",
+                "Fixed bug in maximum number of upgrades"
+            ]
+        },
+        {
             "package_version": "0.1.1",
             "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v0.1.1/megamanx3-ap-poptracker.zip",
             "sha256": "7d1e9b3fc34327191a49c73198328dc4158cca24a16a4521327819a7373636a1",
