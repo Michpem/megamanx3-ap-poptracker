@@ -232,7 +232,10 @@ function rematch_quota_met()
     else
         return false
     end
+end
 
+function refights_required()
+    return Tracker:ProviderCountForCode("doppler_lab_3_boss_rematch_count") > 0
 end
 
 function print_debug_doppler()
