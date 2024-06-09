@@ -142,7 +142,7 @@
                     {
                         "name": "Kangaroo Ride Armor",
                         "chest_unopened_img": "images/icons/ridekangaroo.png",
-                        "access_rules": ["legs1,ride_frog", "legs1,frost_shield,$can_charge"]
+                        "access_rules": ["legs1,ride_frog", "[legs1],frost_shield,$can_charge"]
                     },
                     {
                         "name": "Leg Chip Capsule",
