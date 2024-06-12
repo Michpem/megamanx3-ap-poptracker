@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.0.1",
+            "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v1.0.1/megamanx3-ap-poptracker.zip",
+            "sha256": "3fd9ec9f4811596702c34088ceac4bc505b98133e5177119b244b61dbbf85364",
+            "changelog": [
+                "Fixed logic regarding access to items past minibosses"
+            ]
+        },
+        {
             "package_version": "1.0.0",
             "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v1.0.0/megamanx3-ap-poptracker.zip",
             "sha256": "0130ef07eff6c56decb0fb321c078a24dbcd0d0691b86bda955285410b57395e",
