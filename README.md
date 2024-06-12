@@ -9,6 +9,9 @@ This is a PopTracker pack for Mega Man X3 Archipelago. Created by MeridianBC.
 Just download the lastest build or source and put in your PopTracker packs folder.
 
 ## Recent Changes
+### v1.0.1 (June 12, 2024)
+- Fixed logic regarding access to items past minibosses
+
 ### v1.0.0 (June 7, 2024)
 - Version 1.0 because all game logic is now tracked and therefore should be feature complete for now.
 - Reworked boss weaknesses. Weaknesses are now detected and used for logic calculations, with vanilla weaknesses as a fallback if not autotracking
