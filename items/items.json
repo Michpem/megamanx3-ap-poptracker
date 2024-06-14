@@ -232,7 +232,7 @@
       "stages": [
         {
           "img": "images/icons/legs_gray.png",
-          "name": "No Arms Upgrade",
+          "name": "No Legs Upgrade",
           "codes": "legs0",
           "inherit_codes": true
         },
