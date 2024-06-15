@@ -273,7 +273,7 @@ WEAPON_CHECKS = {
     [0x03] = function() return Tracker:FindObjectForCode("arms").CurrentStage >= 1 end, --Charged Shot (Level 2)
     [0x04] = function() return is_active("z_saber") end, --Z-Saber (Beam)
     [0x05] = function() return is_active("z_saber") end, --Z-Saber (Beam slashes)
-    [0x06] = function() return Tracker:FindObjectForCode("legs").CurrentStage >= 1 end, --Lemon (Dash)
+    [0x06] = function() return true end, --Lemon (Dash)
     [0x07] = function() return is_active("acid_burst") end, --Uncharged Acid Burst
     [0x08] = function() return is_active("parasitic_bomb") end, --Uncharged Parasitic Bomb
     [0x09] = function() return is_active("triad_thunder") end, --Uncharged Triad Thunder (Contact)
