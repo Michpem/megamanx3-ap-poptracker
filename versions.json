@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.0.3",
+            "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v1.0.3/megamanx3-ap-poptracker.zip",
+            "sha256": "d407fdd78208e4c0c1576a0d4d70bc2aef5044148a8b6fb8aaa1faebfa00e486",
+            "changelog": [
+                "Fixed bug in how total armor upgrades is calculated"
+            ]
+        },
+        {
             "package_version": "1.0.2",
             "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v1.0.2/megamanx3-ap-poptracker.zip",
             "sha256": "1d3f66bd394ff374da9ef9a1d0fcef55f576cf3f9e80d92022904bdf8558868d",
