@@ -9,6 +9,9 @@ This is a PopTracker pack for Mega Man X3 Archipelago. Created by MeridianBC.
 Just download the lastest build or source and put in your PopTracker packs folder.
 
 ## Recent Changes
+### v1.0.3 (Jine 16, 2024)
+- Fixed bug in how total armor upgrades is calculated
+
 ### v1.0.2 (June 15, 2024)
 - Fixed oversight with dash lemon weakness
 
