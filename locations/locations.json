@@ -739,7 +739,7 @@
             },
             {
                 "name": "Dr. Doppler's Lab 2",
-                "access_rules": ["$are_doppler_two_and_three_open", "$doppler_1_cleared"],
+                "access_rules": ["$are_doppler_two_and_three_open,drdoppler_state_1", "$doppler_1_cleared,drdoppler_state_1"],
                 "sections": [
                     {
                         "name": "Dr. Doppler's Lab 2 Boss",
@@ -760,7 +760,7 @@
             },
             {
                 "name": "Dr. Doppler's Lab 3",
-                "access_rules": ["$are_doppler_two_and_three_open", "$doppler_2_cleared"],
+                "access_rules": ["$are_doppler_two_and_three_open,drdoppler_state_1", "$doppler_2_cleared,drdoppler_state_1"],
                 "sections": [
                     {
                         "name": "Blizzard Buffalo (Rematch)",
@@ -857,7 +857,7 @@
             },
             {
                 "name": "Dr. Doppler's Lab 4",
-                "access_rules": ["doppler_1_cleared,doppler_2_cleared,doppler_3_cleared"],
+                "access_rules": ["doppler_1_cleared,doppler_2_cleared,doppler_3_cleared,drdoppler_state_1"],
                 "sections": [
                     {
                         "name": "Sigma",
