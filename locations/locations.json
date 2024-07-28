@@ -664,7 +664,9 @@
                         "chest_unopened_img": "images/icons/heart.png",
                         "access_rules": [
                             "legs1,$has_weakness_for|Shurikein",
-                            "legs1,$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                            "legs1,$boss_other_damage_possible,[$boss_weaknesses_not_required]",
+                            "[legs1],$has_weakness_for|Shurikein,ride_chimera|ride_kangaroo|ride_hawk",
+                            "[legs1],$boss_other_damage_possible,[$boss_weaknesses_not_required]|Shurikein,ride_chimera|ride_kangaroo|ride_hawk"
                         ]
                     },
                     {
