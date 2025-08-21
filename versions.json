@@ -3,7 +3,7 @@
 	    {
             "package_version": "1.0.4",
             "download_url": "https://github.com/Michpem/megamanx3-ap-poptracker/releases/download/1.0.4/megamanx3-ap-poptracker.zip",
-            "sha256": "1E1633002F859550537E93A42AFA4A274AB4411B3B8FDE3B76DCDABC61D44238",
+            "sha256": "6B8E00BB90CA209F15B81716C010A8FEBA160E09F964689889A0A31CEC3C9AFD",
             "changelog": [
                 "Blizzard Buffalo - Sub Tank: Added yellow logic for Zero<->X swap trick/frame perfect walljump",
 				"Volt Catfish - Body Capsule: Added yellow logic for Legs 2",
@@ -69,4 +69,5 @@
             ]
         }
     ]
+
 }
