@@ -80,7 +80,7 @@
                     {
                         "name": "Sub Tank",
                         "chest_unopened_img": "images/icons/subtank.png",
-                        "access_rules": ["legs1"]
+                        "access_rules": ["legs1", "[legs1]"]
                     },
                     {
                         "name": "Legs Capsule",
@@ -163,7 +163,8 @@
                         "visibility_rules": [ "pickupsanity_on" ],
                         "access_rules": [
                             "$has_weakness_for|Hotareeca",
-                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]",
+							"helmet1"
                         ]
                     },
                     {
@@ -171,6 +172,7 @@
                         "chest_unopened_img": "images/icons/toxicseahorse.png",
                         "access_rules": [
                             "$has_weakness_for|Hotareeca,$has_weakness_for|Toxic Seahorse",
+							"helmet1,$has_weakness_for|Toxic Seahorse",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     },
@@ -179,6 +181,7 @@
                         "chest_unopened_img": "images/icons/toxicseahorse.png",
                         "access_rules": [
                             "$has_weakness_for|Hotareeca,$has_weakness_for|Toxic Seahorse",
+							"helmet1,$has_weakness_for|Toxic Seahorse",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     }
@@ -235,6 +238,7 @@
                         "chest_unopened_img": "images/icons/tunnelrhino.png",
                         "access_rules": [
                             "$has_weakness_for|Hell Crusher,$has_weakness_for|Tunnel Rhino",
+							"helmet1,$has_weakness_for|Tunnel Rhino",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     },
@@ -243,6 +247,7 @@
                         "chest_unopened_img": "images/icons/tunnelrhino.png",
                         "access_rules": [
                             "$has_weakness_for|Hell Crusher,$has_weakness_for|Tunnel Rhino",
+							"helmet1,$has_weakness_for|Tunnel Rhino",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     }
@@ -279,7 +284,7 @@
                     {
                         "name": "Body Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "access_rules": ["$can_charge,gravity_well"]
+                        "access_rules": ["$can_charge,gravity_well", "[never], legs2"]
                     },
                     {
                         "name": "Weapon Energy Pickup 1 (Left of Sub Tank)",
@@ -471,7 +476,7 @@
                     {
                         "name": "Arms Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "access_rules": ["legs1,tornado_fang"]
+                        "access_rules": ["legs1,tornado_fang", "[legs1],tornado_fang"]
                     },
                     {
                         "name": "HP Pickup 3 (Before Worm Seeker-R room)",
@@ -492,7 +497,8 @@
                         "chest_unopened_img": "images/icons/heart.png",
                         "access_rules": [
                             "$has_weakness_for|Worm Seeker-R",
-                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]",
+							"helmet1"
                         ]
                     },
                     {
@@ -500,6 +506,7 @@
                         "chest_unopened_img": "images/icons/neontiger.png",
                         "access_rules": [
                             "$has_weakness_for|Worm Seeker-R,$has_weakness_for|Neon Tiger",
+							"helmet1,$has_weakness_for|Neon Tiger",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     },
@@ -508,6 +515,7 @@
                         "chest_unopened_img": "images/icons/neontiger.png",
                         "access_rules": [
                             "$has_weakness_for|Worm Seeker-R,$has_weakness_for|Neon Tiger",
+							"helmet1,$has_weakness_for|Neon Tiger",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     }
@@ -539,7 +547,7 @@
                     {
                         "name": "Frog Ride Armor",
                         "chest_unopened_img": "images/icons/ridefrog.png",
-                        "access_rules": ["legs1"]
+                        "access_rules": ["legs1","[legs1]"]
                     },
                     {
                         "name": "HP Pickup 2 (Before elevator)",
@@ -626,7 +634,9 @@
                     {
                         "name": "Helmet Chip Capsule",
                         "chest_unopened_img": "images/icons/capsule.png",
-                        "access_rules": ["legs2", "legs1,ride_hawk"]
+                        "access_rules": ["legs2", "legs1,ride_hawk", 
+							"[never],legs1,ride_hawk", "[never],legs1,ride_chimera", "[never],legs1,ride_kangaroo"
+							]
                     },
                     {
                         "name": "HP Pickup 1 (Bottom left of conveyor belts section)",
@@ -647,7 +657,8 @@
                         "chest_unopened_img": "images/icons/ridechimera.png",
                         "access_rules": [
                             "tornado_fang,$has_weakness_for|Shurikein",
-                            "tornado_fang,$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                            "tornado_fang,$boss_other_damage_possible,[$boss_weaknesses_not_required]",
+							"tornado_fang,helmet1"
                         ]
                     },
                     {
@@ -656,7 +667,8 @@
                         "visibility_rules": [ "pickupsanity_on" ],
                         "access_rules": [
                             "$has_weakness_for|Shurikein",
-                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]",
+							"helmet1"
                         ]
                     },
                     {
@@ -665,8 +677,7 @@
                         "access_rules": [
                             "legs1,$has_weakness_for|Shurikein",
                             "legs1,$boss_other_damage_possible,[$boss_weaknesses_not_required]",
-                            "[legs1],$has_weakness_for|Shurikein,ride_chimera|ride_kangaroo|ride_hawk",
-                            "[legs1],$boss_other_damage_possible,[$boss_weaknesses_not_required]|Shurikein,ride_chimera|ride_kangaroo|ride_hawk"
+							"[never],helmet1,tornado_fang"
                         ]
                     },
                     {
@@ -674,6 +685,7 @@
                         "chest_unopened_img": "images/icons/blasthornet.png",
                         "access_rules": [
                             "$has_weakness_for|Shurikein,$has_weakness_for|Blast Hornet",
+							"helmet1,$has_weakness_for|Blast Hornet",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     },
@@ -682,6 +694,7 @@
                         "chest_unopened_img": "images/icons/blasthornet.png",
                         "access_rules": [
                             "$has_weakness_for|Shurikein,$has_weakness_for|Blast Hornet",
+							"helmet1,$has_weakness_for|Blast Hornet",
                             "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     }
@@ -840,12 +853,16 @@
                         "name": "HP Pickup (Before Dr. Doppler room)",
                         "chest_unopened_img": "images/icons/large_hp.png",
                         "visibility_rules": [ "pickupsanity_on" ],
-                        "access_rules": ["$rematch_quota_met"]
+                        "access_rules": ["$rematch_quota_met","helmet1"]
                     },
                     {
                         "name": "Dr. Doppler",
                         "chest_unopened_img": "images/icons/drdoppler.png",
-                        "access_rules": ["$rematch_quota_met,$boss_other_damage_possible,[$boss_weaknesses_not_required]", "$rematch_quota_met,$has_weakness_for|Doppler"]
+                        "access_rules": [
+							"$rematch_quota_met,$boss_other_damage_possible,[$boss_weaknesses_not_required]",
+							"helmet1,$boss_other_damage_possible,[$boss_weaknesses_not_required]",
+							"$rematch_quota_met,$has_weakness_for|Doppler",
+							"helmet1,$has_weakness_for|Doppler"]
                         
                     }
                 ],

@@ -1,5 +1,19 @@
 {
     "versions": [
+	    {
+            "package_version": "1.0.4",
+            "download_url": "https://github.com/Michpem/megamanx3-ap-poptracker/releases/download/1.0.4/megamanx3-ap-poptracker.zip",
+            "sha256": "1E1633002F859550537E93A42AFA4A274AB4411B3B8FDE3B76DCDABC61D44238",
+            "changelog": [
+                "Blizzard Buffalo - Sub Tank: Added yellow logic for Zero<->X swap trick/frame perfect walljump",
+				"Volt Catfish - Body Capsule: Added yellow logic for Legs 2",
+				"Neon Tiger - Arms Capsule: Added yellow logic for Zero<->X swap trick",
+				"Gravity Beetle - Frog Ride Armor: Added yellow logic for Zero<->X swap trick/frame perfect walljump",
+				"Blast Hornet - Helmet Chip Capsule: Added yellow logic for Legs 1 and Chimera or Kangaroo armors",
+				"Blast Hornet - Heart Tank: Added yellow logic for the free Chimera Armor (though it only works for first time)",
+				"Added Helmet checkpoint logic"
+            ]
+        },
         {
             "package_version": "1.0.3",
             "download_url": "https://github.com/BrianCumminger/megamanx3-ap-poptracker/releases/download/v1.0.3/megamanx3-ap-poptracker.zip",
