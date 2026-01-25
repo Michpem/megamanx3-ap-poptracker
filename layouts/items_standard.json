@@ -23,6 +23,8 @@
                             ["ride_chimera", "ride_kangaroo", "ride_hawk", "ride_frog"],
                             ["third_armor_helmet", "third_armor_body", "arms", "third_armor_legs"],
                             ["heart_tank", "sub_tank", "z_saber","maverick_medal"],
+							["chip_quick_charge", "chip_speedster", "chip_super_recover", "chip_rapid_five"],
+							["chip_speed_shot", "chip_weapon_plus", "chip_buster_plus", "chip_item_plus"],
                             ["auto_tab_switch", "", "", ""]
                         ]
                     }

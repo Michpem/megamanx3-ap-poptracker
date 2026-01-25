@@ -134,6 +134,69 @@
         "img": "images/icons/zsaber.png",
         "codes": "z_saber"
     },
+    {
+        "name": "Quick Charge Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_quick_charge.png",
+        "disabled_img": "images/icons/chip_quick_charge_gray.png",
+        "codes": "chip_quick_charge"
+    },
+
+    {
+        "name": "Speedster Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_speedster.png",
+        "disabled_img": "images/icons/chip_speedster_gray.png",
+        "codes": "chip_speedster"
+    },
+	
+    {
+        "name": "Super Recover Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_super_recover.png",
+        "disabled_img": "images/icons/chip_super_recover_gray.png",
+        "codes": "chip_super_recover"
+    },
+	
+    {
+        "name": "Rapid Five Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_rapid_five.png",
+        "disabled_img": "images/icons/chip_rapid_five_gray.png",
+        "codes": "chip_rapid_five"
+    },
+	
+    {
+        "name": "Speed Shot Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_speed_shot.png",
+        "disabled_img": "images/icons/chip_speed_shot_gray.png",
+        "codes": "chip_speed_shot"
+    },
+	
+    {
+        "name": "Weapon Plus Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_weapon_plus.png",
+        "disabled_img": "images/icons/chip_weapon_plus_gray.png",
+        "codes": "chip_weapon_plus"
+    },
+	
+    {
+        "name": "Buster Plus Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_buster_plus.png",
+        "disabled_img": "images/icons/chip_buster_plus_gray.png",
+        "codes": "chip_buster_plus"
+    },
+
+    {
+        "name": "Item Plus Chip",
+        "type": "toggle",
+        "img": "images/icons/chip_item_plus.png",
+        "disabled_img": "images/icons/chip_item_plus_gray.png",
+        "codes": "chip_item_plus"
+    },
 
     {
         "name": "Heart Tank",
