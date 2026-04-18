@@ -61,6 +61,9 @@ end
 function vile_codes_req_met()
     return Tracker:FindObjectForCode("stage_vile").Active
 end
+function vile_maverick_codes_req_met()
+    return Tracker:FindObjectForCode("stage_crush_crawfish").Active or Tracker:FindObjectForCode("stage_volt_catfish").Active or Tracker:FindObjectForCode("stage_blizzard_buffalo").Active
+end
 function vile_medals_req_met()
     local mavericks = Tracker:ProviderCountForCode("maverick_medal")
     local mavericks_needed = Tracker:ProviderCountForCode("vile_medal_count")
@@ -87,16 +90,17 @@ function vile_sub_tanks_req_met()
     return sub_tanks >= sub_tanks_needed
 end
 function vile_all_req_met()
-    return vile_medals_req_met() and vile_weapons_req_met() and vile_upgrade_req_met() and vile_heart_tanks_req_met() and vile_sub_tanks_req_met()
+    return vile_medals_req_met() and vile_maverick_codes_req_met() and vile_weapons_req_met() and vile_upgrade_req_met() and vile_heart_tanks_req_met() and vile_sub_tanks_req_met()
 end
 
 function is_vile_open()
     local allreqs = Tracker:ProviderCountForCode("vile_sub_tank_count") + Tracker:ProviderCountForCode("vile_heart_tank_count") + Tracker:ProviderCountForCode("vile_upgrade_count") + Tracker:ProviderCountForCode("vile_weapon_count") + Tracker:ProviderCountForCode("vile_medal_count")
     if allreqs == 0 then
-        return vile_codes_req_met()
+        return vile_codes_req_met() and vile_maverick_codes_req_met()
     end
     return vile_all_req_met()
 end
+
 
 function update_vile_state()
     local vilestate = Tracker:FindObjectForCode('vile_state')
