@@ -3,7 +3,7 @@
 	    {
             "package_version": "1.0.6",
             "download_url": "https://github.com/Michpem/megamanx3-ap-poptracker/releases/download/1.0.6/megamanx3-ap-poptracker.zip",
-            "sha256": "-",
+            "sha256": "4960a21eda3ce630c988647c5410b227b8a8e6591ed57f58cc227279dcf93dbc",
             "changelog": [
 				"Logic fix for 'Toxic Seahorse - HP Pickup 3' when having the Helmet Upgrade",
                 "Fixed swapped IDs for the first two HP Pickup locations in Volt Catfish"
