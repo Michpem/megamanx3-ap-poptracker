@@ -163,8 +163,7 @@
                         "visibility_rules": [ "pickupsanity_on" ],
                         "access_rules": [
                             "$has_weakness_for|Hotareeca",
-                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]",
-							"helmet1"
+                            "$boss_other_damage_possible,[$boss_weaknesses_not_required]"
                         ]
                     },
                     {
